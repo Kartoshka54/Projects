@@ -62,7 +62,6 @@ print(klass.predict(x_train))
 
 print(y_train.values)
 
-#Jetzt koennen wir sehen ob unsere Methode Akkurat ist und rasiert wie kanackebart
 #Die Tabelle unten hilft uns zu sehen, ob unser Programm sauber arbeitet
 from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
 akku = klass.predict(x_train)
@@ -71,7 +70,6 @@ print(classification_report(y_train, akku))
 print('Akku:', accuracy_score(y_train, akku))
 
 print('Test Resultate: ')
-#Reeeeeeee
 akku = klass.predict(x_test)
 print(classification_report(y_test, akku))
 print('Akku:', accuracy_score(y_test, akku))
